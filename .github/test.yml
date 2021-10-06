@@ -1,0 +1,17 @@
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+  jobs:
+    test:
+      name: Test
+      runs-on: ubuntu-latest
+      steps:
+      - name: Work
+        run: echo "Working"
